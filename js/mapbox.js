@@ -14,7 +14,7 @@ let map = new mapboxgl.Map({
 });
 
 map.on('load', async function() {
-	const response = await fetch('../dataset/geojson.json');
+	const response = await fetch('./dataset/geojson.json');
   	Dataset = await response.json();
 
 	  filtreMarker(Dataset);
@@ -167,7 +167,7 @@ function createMarker(type, coordinates, properties) {
 function createCustomIcon(iconSrc) {
 	const customIcon = document.createElement('div');
 	customIcon.className = 'custom-marker';
-	customIcon.innerHTML = `<img src="../images/${iconSrc}" alt="Custom Icon">`;
+	customIcon.innerHTML = `<img src="./images/${iconSrc}" alt="Custom Icon">`;
 	return customIcon;
 }
 

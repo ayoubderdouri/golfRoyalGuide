@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css">
 
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/mapboxstyle.css">
+    <link rel="stylesheet" href="./css/mapboxstyle.css">
 
 
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet' />
@@ -30,14 +30,14 @@
         <li class="list-group-item">
             <input class="form-check-input me-1 style-control" type="radio" name="listGroupRadio" value="satellite-streets-v12" id="firstRadio" checked>
             <label class="form-check-label" for="firstRadio">
-                <img src="/icons/globe.svg" width="20" height="20" alt="">
+                <img src="./icons/globe.svg" width="20" height="20" alt="">
                 Satellite
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1 style-control" type="radio" name="listGroupRadio" value="streets-v12" id="secondRadio" checked>
             <label class="form-check-label" for="secondRadio">
-                <img src="/icons/racetrack-boat.svg" width="20" height="20" alt="">
+                <img src="./icons/racetrack-boat.svg" width="20" height="20" alt="">
                 Plan
             </label>
         </li>
@@ -49,35 +49,35 @@
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="parkingCheckbox">
             <label class="form-check-label stretched-link" for="parkingCheckbox">
-                <img src="/images/marker-parking.svg" width="30" height="30" alt="">
+                <img src="./images/marker-parking.svg" width="30" height="30" alt="">
                 Parking
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="wcCheckbox">
             <label class="form-check-label stretched-link" for="wcCheckbox">
-                <img src="/images/marker-wc.svg" width="30" height="30" alt="">
+                <img src="./images/marker-wc.svg" width="30" height="30" alt="">
                 WC
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="redCourseCheckbox">
             <label class="form-check-label stretched-link" for="redCourseCheckbox">
-                <img src="/images/marker-golf-red.svg" width="30" height="30" alt="">
+                <img src="./images/marker-golf-red.svg" width="30" height="30" alt="">
                 Parcours Rouge
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="blueCourseCheckbox">
             <label class="form-check-label stretched-link" for="blueCourseCheckbox">
-                <img src="/images/marker-golf-blue.svg" width="30" height="30" alt="">
+                <img src="./images/marker-golf-blue.svg" width="30" height="30" alt="">
                 Parcours Bleu
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="greenCourseCheckbox">
             <label class="form-check-label stretched-link" for="greenCourseCheckbox">
-                <img src="/images/marker-golf-green.svg" width="30" height="30" alt="">
+                <img src="./images/marker-golf-green.svg" width="30" height="30" alt="">
                 Parcours Vert
             </label>
         </li>
@@ -88,21 +88,21 @@
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="media-center">
             <label class="form-check-label stretched-link" for="media-center">
-                <img src="/images/media-center.svg" width="30" height="30" alt="">
+                <img src="./images/media-center.svg" width="30" height="30" alt="">
                 Centre des Médias
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="restaurant">
             <label class="form-check-label stretched-link" for="restaurant">
-                <img src="/images/restaurant.svg" width="30" height="30" alt="">
+                <img src="./images/restaurant.svg" width="30" height="30" alt="">
                 Salon des Joueurs THII & CLM
             </label>
         </li>
         <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="club-house">
             <label class="form-check-label stretched-link" for="redCourseCheckbox">
-                <img src="/images/marker-golf-red.svg" width="30" height="30" alt="">
+                <img src="./images/marker-golf-red.svg" width="30" height="30" alt="">
                 Club House
             </label>
         </li>
@@ -130,19 +130,8 @@
       
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-          <script src="js/mapbox.js"></script>
-          <script>
-            document.getElementById('d-building').addEventListener('click',function(event){
-              let list =  document.getElementById('village');
-              if(list.classList.contains('d-none')){
-                list.classList.remove('d-none');
-                list.classList.add('d-block');
-              }else if(list.classList.contains('d-block')){
-                list.classList.remove('d-block');
-                list.classList.add('d-none'); 
-              }
-            });
-          </script>
+          <script src="./js/mapbox.js"></script>
+        
 
 
 
