@@ -4,11 +4,11 @@ body { margin: 0; padding: 0; }
 
 #menu.streets-v12{
 
-    background-image: url(/images/background/plan-map.jpeg);
+    background-image: url(./../images/background/plan-map.jpeg);
     color: #494141;
 }
 #menu.satellite-streets-v12{
-    background-image: url(/images/background/satellite-map.jpg);
+    background-image: url(./../images/background/satellite-map.jpg);
     color: #fff;
 }
 .mapboxgl-ctrl-bottom-left{
@@ -45,7 +45,7 @@ body { margin: 0; padding: 0; }
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 10px;
-    background-image: url(/images/background/plan-map.jpeg);
+    background-image: url(./../images/background/plan-map.jpeg);
 
 }
 
