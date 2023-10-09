@@ -25,7 +25,7 @@ map.on('load',function() {
  */
 function forwardGeocoder(query) {
   // Filter the features based on the query
-  const filteredFeatures = Dataset.features.filter(feature => {
+  const filteredFeatures = dataset.features.filter(feature => {
     const title = feature.properties.title;
     return title && title.toLowerCase().includes(query.toLowerCase());
   });
