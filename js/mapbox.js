@@ -5,7 +5,7 @@ mapboxgl.setRTLTextPlugin(
 	true // Lazy load the plugin
 	);
 
-let Dataset = null;
+
 let map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/streets-v12',
@@ -13,11 +13,8 @@ let map = new mapboxgl.Map({
 	zoom: 13,
 });
 
-map.on('load', async function() {
-	const response = await fetch('./geojson.json');
-  	Dataset = await response.json();
-
-	  filtreMarker(Dataset);
+map.on('load',function() {
+	  filtreMarker(dataset);
 
 });
 
