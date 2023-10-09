@@ -14,12 +14,13 @@ let map = new mapboxgl.Map({
 });
 
 map.on('load', async function() {
-	const response = await fetch('./dataset/geojson.json');
+	const response = await fetch('./geojson.json');
   	Dataset = await response.json();
 
 	  filtreMarker(Dataset);
 
 });
+
 /**
  * Filters a dataset of features based on a query and modifies the properties of matching features.
  * @param {string} query - The search query to match against the feature properties.
